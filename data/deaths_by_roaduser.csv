@@ -1,0 +1,51 @@
+﻿Years,Deaths,Road_user
+2013,556,Driver
+2014,532,Driver
+2015,555,Driver
+2016,623,Driver
+2017,566,Driver
+2018,519,Driver
+2019,569,Driver
+2020,534,Driver
+2021,530,Driver
+2022,555,Driver
+2013,204,Passenger
+2014,228,Passenger
+2015,252,Passenger
+2016,209,Passenger
+2017,235,Passenger
+2018,205,Passenger
+2019,205,Passenger
+2020,192,Passenger
+2021,182,Passenger
+2022,182,Passenger
+2013,158,Pedestrian
+2014,151,Pedestrian
+2015,160,Pedestrian
+2016,182,Pedestrian
+2017,162,Pedestrian
+2018,178,Pedestrian
+2019,158,Pedestrian
+2020,138,Pedestrian
+2021,133,Pedestrian
+2022,164,Pedestrian
+2013,213,Motorcyclist
+2014,191,Motorcyclist
+2015,205,Motorcyclist
+2016,249,Motorcyclist
+2017,211,Motorcyclist
+2018,191,Motorcyclist
+2019,212,Motorcyclist
+2020,187,Motorcyclist
+2021,237,Motorcyclist
+2022,244,Motorcyclist
+2013,50,Pedal cyclist
+2014,45,Pedal cyclist
+2015,31,Pedal cyclist
+2016,29,Pedal cyclist
+2017,39,Pedal cyclist
+2018,35,Pedal cyclist
+2019,39,Pedal cyclist
+2020,41,Pedal cyclist
+2021,41,Pedal cyclist
+2022,35,Pedal cyclist

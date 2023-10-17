@@ -1,1 +1,2 @@
-# FIT3179_Visualisation2_30623162
+FIT3179 - Data Visualisation 2 
+Hayden Smith - 30623162

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height" : 250,
+  "config": {
+    "background": "transparent",
+    "font" : "Inter",
+    "axis": {
+      "grid": false}
+  },
+  "data": {"url": "https://raw.githubusercontent.com/Hados2k/FIT3179_Visualisation2_30623162/main/data/deaths_by_roaduser.csv",
+    "format": {"type": "csv"}},
+    "transform": [
+        { "filter": "datum.Years==Year"}
+      ],
+  "params": [{
+    "name": "Year",
+    "value": 2022,
+    "bind": {"name": "Select the year:", "input": "range", "min": 2013,"max": 2022,"step": 1}
+      }
+    ],
+  "encoding": {
+    "y": {
+      "field": "Road_user",
+      "type": "nominal",
+      "sort": "ascending",
+      "axis": null
+    }
+  },
+  "layer": [{
+    "mark": {"type": "bar", "font" : "Inter"},
+    "encoding": {
+      "x": {
+        "aggregate": "mean",
+        "field": "Deaths",
+        "scale": {"domain": [0, 700]},
+        "sort": "ascending",
+        "title": "Deaths"
+      },
+      "color": {"field": "Deaths", "type": "quantitative", "scale" :{"scheme": "yelloworangered"}},"tooltip":[
+        {"field":"Deaths", "title": "Deaths: "}
+      ]
+    }
+  }, {
+    "mark": {"type": "text", "align": "left", "x": 10, "fontSize" : 15, "font" : "Inter"},
+    "encoding": {
+      "text": {"field": "Road_user"},
+      "detail": {"aggregate": "count"}
+    }
+  }]
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Visualisation 2 - Hayden Smith 30623162</title>
+  <!-- Import Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class = "custom-background">
+  <div class="page">
+    <!-- container start -->
+    <div class = "container1"><h1>TRAFFIC RELATED DEATHS IN AUSTRALIA</h1></div>
+    <!-- container end -->
+
+    <!-- container start -->
+    <div class = "container2"> 
+        <h2>TRAFFIC DEATHS ACROSS THE GLOBE</h2>
+    <div class = "map-container"><div id="vis1"></div></div>
+    <div class = "textHeading"><p>COUNTRY STATISTICS</p></div>
+    <div class = "dualColumn">
+                <span>When looking on the world scale, <b>Australia</b> given it's size<br>has quite a <b>low death toll</b> per year due to traffic incidents.<br><b>Juxtaposing</b> that 
+                  with the likes of <b>China or India</b> where<br>even given the <b>population size</b> of <b>1.42 and 1.38 billion</b> respectively<br>have a <b>very significant amount of deaths</b>.
+                     These countries have<br>also actually seen a <b>net increase</b> in the<br>overall <b>death toll comparing 1990 to 2019 statistics</b>.
+                  </span>
+                <span>It can be seen that countries like <br><b>Saudi Arabia, Pakistan and Nigeria</b> have actually<br>seen a significant rise in annual death toll as a<br>result of 
+                  traffic incidents, obviously as time increases<br>population size has also increased<br>yet other countries like <b>Russia, Italy, Spain and other european countries</b><br>
+                have actually seen a <b>net decrease</b> in the <b>annual death toll</b><br> as a result of traffic incidents when <br>comparing them <b>across the years 1990 to 2019</b>.
+                </span>
+        </div>
+    </div>
+    <!-- container end -->
+
+    <!-- container start -->
+    <div class="container3">
+        <h2>AUSTRALIAN JURISTICTION AND ASSOCIATED TRAFFIC DEATHS</h2>
+      <div class = "dualColumn">
+        <div class = "dualchart-container1" id = "vis2"></div>
+        <div class = "dualchart-container1" id = "vis6"></div>
+            <p class = "column">Shown, across the years <b>NSW</b> has consistently had the greatest <br>amount of <b>Traffic related deaths</b>. This can be <b>directly related<br>
+              to population size</b> as they are the <b>most populated state</b>.<br>The <b>overall trend</b> of the visualisation follows suit <br>with the <b>population density</b> of each state.</p>
+          <div class = "column">
+            <p>The trend from this visualisation is clear as the <b>more<br> densely populated areas</b> such as <b>Major Cities</b> and <b>Inner Regional</b><br> 
+              areas have a <b>greater contribution to the death toll</b><br> when related to <b>traffic incidents</b>.</p>
+          </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <!-- container start -->
+    <div class="container4">
+      <h2>AUSTRALIAN AGE GROUP AND TYPE OF ROAD USER</h2>
+    <div class = "dualColumn">
+      <div class = "dualchart-container2" id = "vis3"></div>
+      <div class = "dualchart-container2" id = "vis4"></div>
+        <div>
+          <span>As shown, the <b>greatest proportion of deaths per age group</b><br>is associated with <b>40-64 year olds</b><br> which can be explained as it 
+            contains the <br><b>greatest proportion of the population (24 Years)</b>.<br>
+            Conversely, the <b>smallest proportion of deaths</b> is associated with<br><b>0-7 year olds</b> which can be explained by the fact<br>that 
+            they <b>cannot drive</b> and therefore would be a<br>result of being <b>in the vehicle during an accident</b>.
+          </span></div>
+          <div>
+          <span><br>Naturally, <b>Drivers</b> have the <b>greatest number of deaths</b> in terms<br>of road user as there is much higher count of<br>
+            drivers than any of the other categories, <b>Motor cyclists</b> are<br>the <b>second highest</b> category which goes to<br>show how <b>dangerous</b> motor cycling can be, 
+            even<br><b>greater than a passenger</b> in most years.
+          </span></div>
+    </div>
+  </div>
+    <!-- container end -->
+
+    <!-- container start -->
+    <div class="container3">
+        <h2>AUSTRALIAN MALE AND FEMALES - TRAFFIC DEATHS COMPARISON
+          <p class = "subHeading">Key factors explaining why Males have a greater proportion of Traffic related deaths</p>
+        </h2>
+        <div class = "triColumn">
+        <div class = "column">
+            <span>
+              <p class = "dotPointL">Vehicle Choices</p>
+              <p class = "leftColumn"><b>Males</b> are more likely to drive <b>larger and more powerful vehicles</b> which can be directly associated with a <b>higher crash risk</b><br><br></p>
+              <p class = "dotPointL">Alcohol and Substance use</p>
+              <p class = "leftColumn"><b>Males</b> are <b>more likely</b> to <b>drive under the influence of alcohol</b> or <b>other substances</b> which significantly <b>increases the risk of accidents occuring</b></p>
+            </span>
+          </div>
+        <div class = "column" id = "vis5"></div>
+        <div class = "column">
+          <span>
+              <p class = "dotPointR">Risk-Taking Behaviour</p>
+              <p class = "rightColumn">Studies show that <b>Males</b> on average tend to engage in <b>riskier driving behaviours</b>. 
+                This includes <b>behaviours</b> such as <b>speeding, not using seat belts and aggressive driving</b></p>
+              <p class = "dotPointR">Occupation</p>
+              <p class = "rightColumn">Certain <b>industries</b> like <b>construction and transportation</b> have a <b>higher 
+                proportion of male workers</b> which are then <b>more likely</b> to be involved in a <b>work related incident</b></p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+    
+    </div>
+  </div> 
+  <!-- end page -->
+
+  <script type="text/javascript">
+    var specVis1 = "charts/WorldMap_TrafficAccidents.json";
+    var specVis2 = "charts/States_deaths_peryear.json";
+    var specVis3 = "charts/Deaths_agegroup.json";
+    var specVis4 = "charts/Deaths_roaduser.json";
+    var specVis5 = "charts/Male_Female_Deaths.json";
+    var specVis6 = "charts/Deaths_area.json";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false });
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+</body>
+
+</html>
